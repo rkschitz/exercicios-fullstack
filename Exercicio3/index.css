@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+nav{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: #333;
+    color: #fff;
+    height: 30px;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    color: #f00;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    height: 30px;
+    width: 100%;
+}
+
+.voltar-btn{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+form p {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: blue;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: pink;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    flex: 1;
+    min-width: 150px; 
+}
+
+.form-row input {
+    flex: 2;
+    padding: 5px;
+    width: 100%; 
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+}

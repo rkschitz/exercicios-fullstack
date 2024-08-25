@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+nav{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: #333;
+    color: #fff;
+    height: 30px;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    color: #f00;
+}
+
+main{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    height: 30px;
+    width: 100%;
+}
+
+.voltar-btn{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.unidades {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.unidades p:nth-child(2) {
+    width: 100px;
+    border: 1px solid red;
+}
+
+.unidades p:nth-child(3) {
+    width: 100em;
+    border: 1px solid green;
+}
+
+.unidades p:nth-child(4) {
+    width: 100rem;
+    border: 1px solid blue;
+}
+
+.unidades p:nth-child(5) {
+    width: 100%;
+    border: 1px solid orange;
+}
+
+.unidades p:nth-child(6) {
+    width: 100vw;
+    border: 1px solid purple;
+}
+
+.unidades p:nth-child(7) {
+    width: 100vh;
+    border: 1px solid pink;
+}
+
+.unidades p:nth-child(8) {
+    width: 100cm;
+    border: 1px solid brown;
+}
+
+.unidades p:nth-child(9) {
+    width: 100mm;
+    border: 1px solid teal;
+}
+
+.unidades p:nth-child(10) {
+    width: 100in;
+    border: 1px solid gray;
+}
+
+.unidades p:nth-child(11) {
+    width: 100pt;
+    border: 1px solid navy;
+}
+
+.unidades p:nth-child(12) {
+    width: 100pc;
+    border: 1px solid olive;
+}

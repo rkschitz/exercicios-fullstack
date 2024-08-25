@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+footer {
+    display: none;
+}
+
+main {
+    padding: 2rem;
+    margin-bottom: 2rem; 
+}
+
+#exercicios {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Ajuste o espaçamento entre os itens */
+}
+
+.exercicio {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exercicio:hover {
+    background: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.n-exercicio {
+    font-weight: bold;
+    width: 2rem;
+    text-align: center;
+    background: #ddd;
+    border-radius: 50%;
+}
+
+.enunciado {
+    flex: 1;
+}

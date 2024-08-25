@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Execicio10</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Aqui</li>
+                <li>vai</li>
+                <li>o</li>
+                <li>cabeçalho</li>
+            </ul>
+            <a href="../index.html" class="voltar-btn">Voltar</a>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+            <h2>Cadastro</h2>
+            <p>Preencha os campos abaixo para se cadastrar</p>
+            <div class="form-row">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" minlength="3">
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" minlength="4">
+            </div>
+            <div class="form-row">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" minlength="11">
+            </div>
+            <div class="form-row">
+                <label for="data-nascimento">Data de nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" minlength=8>
+            </div>
+            <div class="form-row">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" minlength="6" maxlength="10">
+            </div>
+            <span id="error-message"></span>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>Aqui é o footer</footer>
+</body>
+
+<script>
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const nome = document.querySelector('#nome').value;
+        const email = document.querySelector('#email').value;
+        const telefone = document.querySelector('#telefone').value;
+        const dataNascimento = document.querySelector('#data-nascimento').value;
+        const senha = document.querySelector('#senha').value;
+        const msg = document.querySelector('#error-message');
+
+        if (nome === '' || email === '' || telefone === '' || dataNascimento === '' || senha === '') {
+            msg.innerText = 'Preencha todos os campos';
+        } else {
+            alert('Cadastro realizado com sucesso');
+        }
+    });
+</script>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Execicio02</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Aqui</li>
+                <li>vai</li>
+                <li>o</li>
+                <li>cabeçalho</li>
+            </ul>
+            <a href="../index.html" class="voltar-btn">Voltar</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="conteudo">
+            <h1 class="titulo">Itens adicionados via JavaScript</h1>
+            <ul id="lista"></ul>
+            <button>Clique aqui para trocar a cor do titulo</button>
+        </div>
+    </main>
+    <footer>Aqui é o footer</footer>
+</body>
+
+<script>
+    const lista = document.getElementById('lista');
+    const titulo = document.getElementsByClassName('titulo')[0];
+    const button = document.getElementsByTagName('button')[0];
+    let cor = false;
+    const itens = ['Banana', 'Laranja', 'Melancia'];
+
+    itens.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        lista.appendChild(li);
+    });
+
+    button.addEventListener('click', () => {
+        if (cor) {
+            cor = false;
+            titulo.style.color = 'blue';
+            return;
+        }
+        titulo.style.color = 'red';
+        cor = true;
+    });
+
+
+</script>
+
+
+</html>
