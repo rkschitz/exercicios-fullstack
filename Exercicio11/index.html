@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação com Mouse e Teclado</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Aqui</li>
+                <li>vai</li>
+                <li>o</li>
+                <li>cabeçalho</li>
+            </ul>
+            <a href="../index.html" class="voltar-btn">Voltar</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Interação com Mouse e Teclado</h1>
+        <div id="quadrado"></div>
+    </main>
+    <footer>Aqui é o footer</footer>
+</body>
+<script>
+    const quadrado = document.getElementById('quadrado');
+
+    quadrado.addEventListener('mouseover', function () {
+        quadrado.style.backgroundColor = 'blue';
+    });
+
+    quadrado.addEventListener('mouseout', function () {
+        quadrado.style.backgroundColor = '#4CAF50';
+    });
+
+    document.addEventListener('keydown', function (event) {
+        const distancia = 10;
+        const style = window.getComputedStyle(quadrado);
+        const left = parseInt(style.left);
+        const top = parseInt(style.top);
+
+        switch (event.key) {
+            case 'ArrowUp':
+                quadrado.style.top = (top - distancia) + 'px';
+                break;
+            case 'ArrowDown':
+                quadrado.style.top = (top + distancia) + 'px';
+                break;
+            case 'ArrowLeft':
+                quadrado.style.left = (left - distancia) + 'px';
+                break;
+            case 'ArrowRight':
+                quadrado.style.left = (left + distancia) + 'px';
+                break;
+        }
+    });
+
+</script>
+
+</html>

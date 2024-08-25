@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Execicio09</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Aqui</li>
+                <li>vai</li>
+                <li>o</li>
+                <li>cabeçalho</li>
+            </ul>
+            <a href="../index.html" class="voltar-btn">Voltar</a>
+        </nav>
+    </header>
+    <main>
+        <div class="funcao">
+            <h2>Alterar o texto a seguir</h2>
+            <span id="texto-alterar">Texto original</span>
+            <input type="text" id="texto" placeholder="Digite o novo texto">
+            <button onclick="alterarTexto()">Alterar</button>
+            <div class="radio">
+                <input type="radio" name="cor" value="red">Vermelho
+                <input type="radio" name="cor" value="blue">Azul
+                <input type="radio" name="cor" value="green">Verde
+                <button onclick="alterarCorTexto()">Alterar cor</button>
+            </div>
+            <div class="tamanho">
+                <input type="number" id="tamanho" placeholder="Digite o tamanho">
+                <button onclick="alterarTamanhoTexto()">Alterar tamanho</button>
+            </div>
+        </div>
+    </main>
+    <footer>Aqui é o footer</footer>
+</body>
+<script>
+    function alterarTexto() {
+        let texto = document.getElementById('texto').value;
+        let textoAlterar = document.getElementById('texto-alterar')
+        textoAlterar.innerText = texto;
+    }
+
+    function alterarCorTexto() {
+        let cor = document.querySelector('input[name="cor"]:checked').value;
+        let textoAlterar = document.getElementById('texto-alterar')
+        textoAlterar.style.color = cor;
+    }
+
+    function alterarTamanhoTexto() {
+        let tamanho = document.getElementById('tamanho').value;
+        let textoAlterar = document.getElementById('texto-alterar')
+        textoAlterar.style.fontSize = tamanho + 'px';
+    }
+</script>
+
+</html>

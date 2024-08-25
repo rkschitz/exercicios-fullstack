@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+nav{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: #333;
+    color: #fff;
+    height: 30px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav li {
+    cursor: pointer;
+}
+
+nav li:hover {
+    color: #f00;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    gap: 50px;
+
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    height: 30px;
+    width: 100%;
+}
+
+.voltar-btn{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+img{
+    max-width: 600px;
+    max-height: 400px;
+    image-resolution: from-image;
+    
+}
+

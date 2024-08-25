@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Lista de exercícios</title>
+</head>
+<body>
+    <header><h1>Página inicial dos exercícios</h1></header>
+    <main>
+        <section id="exercicios">
+            <div class="exercicio">
+                <div class="n-exercicio">1</div>
+                <div class="enunciado">Crie uma página HTML básica com cabeçalho, corpo e rodapé.</div>
+            </div>
+            <div class="exercicio">
+                <div class="n-exercicio">2</div>
+                <div class="enunciado">Utilize listas ordenadas e não ordenadas para organizar informações.</div>
+            </div>
+            <div class="exercicio">
+                <div class="n-exercicio">3</div>
+                <div class="enunciado">Crie um formulário simples com diferentes tipos de campos.</div>
+            </div>
+            <div class="exercicio">
+                <div class="n-exercicio">4</div>
+                <div class="enunciado">Incorpore uma imagem e um vídeo usando tags HTML apropriadas.</div>
+            </div>
+            <div class="exercicio">
+                <div class="n-exercicio">5</div>
+                <div class="enunciado">Estilize uma página HTML básica com seletores de tag, classe e ID.</div>
+            </div>
+            <div class="exercicio">
+                <div class="n-exercicio">6</div>
+                <div class="enunciado">Utilize diferentes unidades de medida para posicionamento e tamanho de elementos.</div>
+            </div>
+            <div class="exercicio">
+                <div class="n-exercicio">7</div>
+                <div class="enunciado">Crie um layout flexível usando Flexbox.</div>
+            </div>
+            <div class="exercicio">
+                <div class="n-exercicio">8</div>
+                <div class="enunciado">Faça uma página responsiva utilizando Grid Layout.</div>
+            </div>
+            <div class="exercicio">
+                <div class="n-exercicio">9</div>
+                <div class="enunciado">Crie funções simples para manipular o DOM.</div>
+            </div>
+            <div class="exercicio">
+                <div class="n-exercicio">10</div>
+                <div class="enunciado">Implemente um sistema de validação de formulário usando JavaScript.</div>
+            </div>
+            <div class="exercicio">
+                <div class="n-exercicio">11</div>
+                <div class="enunciado">Desenvolva uma aplicação que utilize eventos de mouse e teclado para interação.</div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const exercicios = document.getElementById('exercicios');
+            const exerciciosList = exercicios.getElementsByClassName('exercicio');
+            
+            Array.from(exerciciosList).forEach((elemento, index) => {
+                elemento.addEventListener('click', () => {
+                    window.location.href = `/Exercicio${index + 1}/index.html`;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
